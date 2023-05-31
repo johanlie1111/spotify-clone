@@ -184,6 +184,7 @@ h1 {
 }
 .title-album {
   flex: 2;
+  margin-right: 150px;
 }
 .title-date {
   flex: 2;
@@ -208,22 +209,55 @@ h1 {
   margin: 0 30px;
   text-align: left;
   gap: 13px;
-  padding: 10px;
+  /* padding: 10px; */
   align-items: center;
-  position: relative
+  position: relative;
 
   /* can chinh sua  can le*/
 }
+/* hover in hover in */
 
 .play-icon {
-  display: none ;
+  display: none;
   position: absolute;
-  left: 30px;
+  left: 20px;
+  font-size: 15px;
+}
+
+.heart-icon-btn {
+  display: none;
+  position: absolute;
+  right: 90px ;
+}
+
+.heart-icon-btn:hover {
+  color: var(--white-color);
+}
+
+.setting-icon-btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  color: var(--white-color);
+}
+
+/* hover */
+.song-item:hover .setting-icon-btn{
+  display: block;
+}
+
+.song-item:hover .heart-icon-btn {
+  display: block;
 }
 
 .song-item:hover .play-icon {
   display: block;
 }
+
+.song-item:hover .title-album a {
+  color: var(--white-color);
+}
+
 
 .song-item:hover .stt {
   color: transparent;
@@ -231,6 +265,10 @@ h1 {
 .song-item:hover {
   background-color: #4f5052;
   border-radius: 8px;
+}
+
+.song-item:hover .artist-name a {
+  color: var(--white-color);
 }
 
 .song-item .title-title {
@@ -253,14 +291,27 @@ h1 {
   color: var(--white-color);
   font-size: 16px;
 }
+.song-link a:hover {
+  text-decoration: underline solid
+  ;
+}
 
 .song-link a:last-child {
   font-size: 14px;
   color: var(--white-color-second);
 }
-
+/* artist name hover */
+.artist-name a:hover {
+  text-decoration: underline solid;
+}
+/* album hover */
 .title-album a {
   text-decoration: none;
   color: var(--white-color-second);
   font-size: 14px;
+}
+
+.title-album a:hover {
+  text-decoration: underline solid;
+  color: var(--white-color);
 }

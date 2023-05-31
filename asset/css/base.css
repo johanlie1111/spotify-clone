@@ -57,7 +57,16 @@ body {
   gap: 12px;
   align-items: center;
 }
-.item:hover {
+.item a {
+  text-decoration: none;
+  display: flex;
+  color: var(--white-color-second);
+  font-size: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.item a:hover {
   color: var(--white-color);
   cursor: pointer;
 }
@@ -79,6 +88,31 @@ body {
 
 .footer {
   margin-top: auto;
+}
+
+.infor {
+  padding: 30px 0px;
+  text-align: start;
+
+}
+
+.infor-item {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--white-color-second);
+  font-size: 10px;
+  gap: 13px ;
+  padding-bottom: 5px;
+}
+
+.cookies-link a {
+  text-decoration: none;
+  color: var(--white-color-second);
+  font-size: 10px;
+}
+
+.cookies-link a:hover {
+  text-decoration: underline solid;
 }
 .btn {
   font-size: 14px;

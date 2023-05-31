@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Detail</title>
     <link rel="stylesheet" href="./asset/css/base.css" />
+
     <link rel="stylesheet" href="./asset/css/detail.css" />
     <link
       rel="shortcut icon"
@@ -24,48 +25,73 @@
     <!-- side-bar -->
     <div class="sidebar">
       <div class="logo">
-        <img
-          class="logo-img"
-          src="./asset/img/Spotify_logo_with_text.svg.webp"
-          alt=""
-        />
+        <a href="http://127.0.0.1:5500/index.html">
+          <img
+            class="logo-img"
+            src="./asset/img/Spotify_logo_with_text.svg.webp"
+            alt=""
+          />
+        </a>
       </div>
       <div class="first-sidebar">
         <ul class="list">
           <li class="item" id="home-icon">
-            <span>
-              <i class="fa-solid fa-house"></i>
-            </span>
-            <span> Home </span>
+            <a href="http://127.0.0.1:5500/index.html">
+              <span>
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span> Home </span>
+            </a>
           </li>
           <li class="item" id="search-icon">
-            <span>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <span> Search </span>
+            <a href="#">
+              <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <span> Search </span>
+            </a>
           </li>
           <li class="item" id="library-icon">
-            <span>
-              <i class="fa-solid fa-bookmark"></i>
-            </span>
-            <span> Your Library </span>
+            <a href="#">
+              <span>
+                <i class="fa-solid fa-bookmark"></i>
+              </span>
+              <span> Your Library </span>
+            </a>
           </li>
           <li class="item">
-            <span>
-              <i class="fa-regular fa-square-plus"></i>
-            </span>
-            <span> Create Playlist </span>
+            <a href="#">
+              <span>
+                <i class="fa-regular fa-square-plus"></i>
+              </span>
+              <span> Create Playlist </span>
+            </a>
           </li>
           <li class="item">
-            <span>
-              <i class="fa-solid fa-heart"></i>
-            </span>
-            <span> Liked Songs </span>
+            <a href="#">
+              <span>
+                <i class="fa-solid fa-heart"></i>
+              </span>
+              <span> Liked Songs </span>
+            </a>
           </li>
         </ul>
       </div>
 
       <footer class="footer">
+        <div class="infor">
+          <div class="infor-item">
+            <span>legal</span>
+            <span>Privacy Center</span>
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
+            <span>About Ads</span>
+            <span>Accessibility</span>
+          </div>
+          <span class="cookies-link">
+            <a href="#">Cookies</a>
+          </span>
+        </div>
         <button class="btn">
           <span>
             <i class="fa-solid fa-globe"></i>
@@ -147,6 +173,12 @@
           <!-- list song -->
           <ul class="song-list">
             <li class="song-item">
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
               <div class="play-icon">
                 <i class="fa-solid fa-play"></i>
               </div>
@@ -170,10 +202,19 @@
             </li>
             <!-- 1 -->
             <li class="song-item">
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
               <div class="stt">2</div>
               <div class="title-title">
                 <div>
-                  <img src="./asset/img/hinhnhucut.jpg" alt="" />
+                  <img src="./asset/img/Quandvoussouriez.jpg" alt="" />
                 </div>
                 <div class="song-link">
                   <a href="#">Quand vous souriez</a>
@@ -190,10 +231,19 @@
             </li>
             <!-- 2 -->
             <li class="song-item">
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
               <div class="stt">3</div>
               <div class="title-title">
                 <div>
-                  <img src="./asset/img/hinhnhucut.jpg" alt="" />
+                  <img src="./asset/img/Allena.jpg" alt="" />
                 </div>
                 <div class="song-link">
                   <a href="#">Allena</a>
@@ -210,63 +260,119 @@
             </li>
             <!-- 3 -->
             <li class="song-item">
-              <div class="stt">3</div>
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="stt">4</div>
               <div class="title-title">
                 <div>
-                  <img src="./asset/img/hinhnhucut.jpg" alt="" />
+                  <img src="./asset/img/GlanceOut ACasementWindow.jpg" alt="" />
                 </div>
                 <div class="song-link">
-                  <a href="#">Allena</a>
+                  <a href="#">Glance Out A Casement Window</a>
                   <div class="artist-name">
-                    <a href="#">M. Ljungström</a>
+                    <a href="#">Janet Redger</a>
                   </div>
                 </div>
               </div>
               <div class="title-album">
-                <a href="#">Nostalgia</a>
+                <a href="#">Glance Out A Casement Window</a>
               </div>
               <div class="title-date">1 week ago</div>
-              <div class="title-clock">1:39</div>
+              <div class="title-clock">2:19</div>
             </li>
             <!-- 4 -->
             <li class="song-item">
-              <div class="stt">3</div>
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="stt">5</div>
               <div class="title-title">
                 <div>
-                  <img src="./asset/img/hinhnhucut.jpg" alt="" />
+                  <img src="./asset/img/sayingthing.jpg" alt="" />
                 </div>
                 <div class="song-link">
-                  <a href="#">Allena</a>
+                  <a href="#">Saying Things</a>
                   <div class="artist-name">
-                    <a href="#">M. Ljungström</a>
+                    <a href="#">Emanuel Fremont</a>
                   </div>
                 </div>
               </div>
               <div class="title-album">
-                <a href="#">Nostalgia</a>
+                <a href="#">Saying Things</a>
               </div>
               <div class="title-date">1 week ago</div>
-              <div class="title-clock">1:39</div>
+              <div class="title-clock">2:03</div>
             </li>
             <!-- 5 -->
             <li class="song-item">
-              <div class="stt">3</div>
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="stt">6</div>
               <div class="title-title">
                 <div>
-                  <img src="./asset/img/hinhnhucut.jpg" alt="" />
+                  <img src="./asset/img/thistenderappeal.jpg" alt="" />
                 </div>
                 <div class="song-link">
-                  <a href="#">Allena</a>
+                  <a href="#">This Tender Appeal</a>
                   <div class="artist-name">
-                    <a href="#">M. Ljungström</a>
+                    <a href="#">Allysium</a>
                   </div>
                 </div>
               </div>
               <div class="title-album">
-                <a href="#">Nostalgia</a>
+                <a href="#">This Tender Appeal</a>
               </div>
               <div class="title-date">1 week ago</div>
-              <div class="title-clock">1:39</div>
+              <div class="title-clock">2:48</div>
+            </li>
+            <!-- 7 -->
+            <li class="song-item">
+              <div class="setting-icon-btn">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="heart-icon-btn">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="play-icon">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="stt">7</div>
+              <div class="title-title">
+                <div>
+                  <img src="./asset/img/heartopenabnd.jpg" alt="" />
+                </div>
+                <div class="song-link">
+                  <a href="#">Oaks Bluffs</a>
+                  <div class="artist-name">
+                    <a href="#">Elinaura</a>
+                  </div>
+                </div>
+              </div>
+              <div class="title-album">
+                <a href="#">Heart Open & Oak Bluffs</a>
+              </div>
+              <div class="title-date">1 week ago</div>
+              <div class="title-clock">1:57</div>
             </li>
           </ul>
         </div>
